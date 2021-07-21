@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mariominondo/interactive-pricing-component#readme",
   "dependencies": {
     "bootstrap": "^5.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
   }
 }
