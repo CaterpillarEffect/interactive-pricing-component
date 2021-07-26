@@ -1,11 +1,14 @@
-.background__start-trial-btn {
-  background-color: #293356;
+.body {
+  background-image: url("./images/bg-pattern.svg");
 }
 .background {
   background-color: #f1f5fe;
 }
-.body {
-  background-image: url("./images/bg-pattern.svg");
+.background__start-trial-btn {
+  background-color: #293356;
+}
+.background__pageViews {
+  position: center;
 }
 .frame {
   margin-left: auto;
@@ -14,6 +17,6 @@
   position: center;
   margin-top: 7px;
 }
-.background__pageViews {
-  position: center;
-}
+
+
+
