@@ -1,15 +1,6 @@
-.body {
-  background-image: url("./images/bg-pattern.svg");
-}
-.background {
-  background-color: #f1f5fe;
-}
-.background__start-trial-btn {
-  background-color: #293356;
-}
-.background__pageViews {
-  position: center;
-}
+
+
+
 .frame {
   margin-left: auto;
   margin-right: auto;
