@@ -33,9 +33,27 @@ body {
   margin-top: -1em;
 }
 
-.buy-now__price {
+.buy-now__offer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+}
+
+.offer__price {
   font-weight: 800;
   font-size: xx-large;
+  margin-top: -.4em;
+}
+
+.offer__billing-period {
+  margin-top: -.2em;
+}
+
+.buy-now__range {
+  text-align: center;
+}
+
+.range__billing-type {
+  width: 100%;
 }
 
 .frame {
