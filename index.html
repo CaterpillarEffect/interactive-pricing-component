@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
     <!-- displays site properly based on user's device -->
 
     <link
@@ -12,27 +15,47 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet " href="./styles.css" />
-    
 
     <title>Frontend Mentor | Interactive pricing component</title>
-
   </head>
   <body>
     <main class="main">
       <h1 class="main__title">Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
+      <p class="main__subtitle">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
       <div class="main__buy-now">
-        <div class="main__pageviews-number">100k Pageviews</div>
+        <div class="buy-now__pageviews-number">100k Pageviews</div>
         <div>
-          <p class="buy-now__price">Price</p>
-          <p>/month</p>
+          <p class="buy-now__price">$16.00</p>
+          <p class="buy-now__billing-period">/month</p>
         </div>
-        <div>
-          <input type="range" name="service-type" id="service-type" class="main__service-type">
-        </div>
-        <div class="billing-period">Montly Billing </div>
-        <div></div>
-        <div></div>
+        <form action="" method="post">
+          <div class="buy-now__range">
+            <input
+              type="range"
+              name="service-type"
+              id="service-type"
+              class="main__billing-type"
+            />
+          </div>
+          <div class="buy-now__select-billing-period">
+            Montly Billing
+            
+            Yearly Billing
+            <span class="select-billing-period__discount">25% discount</span>
+          </div>
+          <div class="buy-now__characteristics">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          </div>
+          <div class="buy-now__button">
+            <button type="submit" class="button__buy-button">Start my trial</button>
+          </div>
+        </form>
       </div>
     </main>
   </body>

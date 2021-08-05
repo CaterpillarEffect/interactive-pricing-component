@@ -1,5 +1,42 @@
 
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Manrope', sans-serif;
+  background-color: aquamarine;
+}
 
+.main {
+  margin-top: 7em;
+}
+
+.main__buy-now {
+  width: 550px;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 3.5em 2.5em 2em 2.5em;
+}
+
+.main__title, .main__subtitle {
+  text-align: center;
+}
+
+.main__title{
+  font-weight: 800;
+}
+
+.main__subtitle{
+  margin-top: -1em;
+}
+
+.buy-now__price {
+  font-weight: 800;
+  font-size: xx-large;
+}
 
 .frame {
   margin-left: auto;
