@@ -60,6 +60,11 @@ body {
 
 .range__billing-type {
   width: 100%;
+  cursor: grab;
+}
+
+.select-billing-period__checkbox {
+  cursor: pointer;
 }
 
 .button__buy-button{
@@ -68,6 +73,7 @@ body {
   padding: 10px 40px;
   border-style: none;
   color: #fff;
+  cursor: pointer;
 }
 
 

@@ -36,12 +36,14 @@
               type="range"
               name="service-type"
               id="service-type"
-              class="range__billing-type"
+              class="range__billing-type"            
+              onmousedown="changePointerToGrabbing()"   
+              onmouseup="changePointerToGrab()"     
             />
           </div>
           <div class="buy-now__select-billing-period">
             Montly Billing
-            
+            <input type="checkbox" name="checkbox" id="" class="select-billing-period__checkbox">
             Yearly Billing
             <span class="select-billing-period__discount">25% discount</span>
           </div>
@@ -58,5 +60,15 @@
         </form>
       </div>
     </main>
+
+    <script>
+      changePointerToGrabbing = () => {
+        document.getElementById("service-type").style.cursor="grabbing";
+      }
+      changePointerToGrab = () => {
+        document.getElementById("service-type").style.cursor="grab";
+      }
+    </script>
+
   </body>
 </html>
