@@ -63,8 +63,37 @@ body {
   cursor: grab;
 }
 
-.select-billing-period__checkbox {
-  cursor: pointer;
+input[type="checkbox"] {
+  position: relative;
+  background-color: lightgray;
+  appearance: none;
+  width: 50px;
+  height: 26px;
+  vertical-align: middle;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 5px 1px hsla(0, 0%, 52%, 0.707);
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  top: 3px;
+  left: 2px;
+  box-shadow: 0 0 3px 1px black;
+  transition: .4s;
+}
+
+input:checked[type="checkbox"] {
+  background-color: hsl(110, 100%, 50%);
+}
+
+input:checked[type="checkbox"]::before {
+  left: 28px;
+  
 }
 
 .button__buy-button{
@@ -84,6 +113,3 @@ body {
   position: center;
   margin-top: 7px;
 }
-
-
-

@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -36,14 +39,22 @@
               type="range"
               name="service-type"
               id="service-type"
-              class="range__billing-type"            
-              onmousedown="changePointerToGrabbing()"   
-              onmouseup="changePointerToGrab()"     
+              class="range__billing-type"
+              onmousedown="changePointerToGrabbing()"
+              onmouseup="changePointerToGrab()"
             />
           </div>
           <div class="buy-now__select-billing-period">
             Montly Billing
-            <input type="checkbox" name="checkbox" id="" class="select-billing-period__checkbox">
+            <label for="checkbox" class="select-billing-period__checkbox-label">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id=""
+                class="select-billing-period__checkbox"
+                checked
+              />
+            </label>
             Yearly Billing
             <span class="select-billing-period__discount">25% discount</span>
           </div>
@@ -55,7 +66,9 @@
             </ul>
           </div>
           <div class="buy-now__button">
-            <button type="submit" class="button__buy-button">Start my trial</button>
+            <button type="submit" class="button__buy-button">
+              Start my trial
+            </button>
           </div>
         </form>
       </div>
@@ -63,12 +76,11 @@
 
     <script>
       changePointerToGrabbing = () => {
-        document.getElementById("service-type").style.cursor="grabbing";
-      }
+        document.getElementById("service-type").style.cursor = "grabbing";
+      };
       changePointerToGrab = () => {
-        document.getElementById("service-type").style.cursor="grab";
-      }
+        document.getElementById("service-type").style.cursor = "grab";
+      };
     </script>
-
   </body>
 </html>
