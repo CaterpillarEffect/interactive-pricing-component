@@ -72,6 +72,7 @@ input[type="checkbox"] {
   vertical-align: middle;
   border-radius: 20px;
   box-shadow: inset 0px 0px 5px 1px hsla(0, 0%, 52%, 0.707);
+  transition: .5s;
 }
 
 input[type="checkbox"]::before {
